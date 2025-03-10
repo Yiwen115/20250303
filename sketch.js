@@ -26,7 +26,7 @@ function setup() {
   dropdown.position(button.x + button.width + 30, 10); // 將下拉式選單向右移動3格
   dropdown.option('TKU');
   dropdown.option('ET');
-  dropdown.option('筆記');
+  dropdown.option('測驗卷');
   dropdown.changed(handleDropdownChange); // 設置選單變更時的回調函數
 
   iframe = createElement('iframe');
@@ -50,8 +50,8 @@ function handleDropdownChange() {
     iframe.attribute('src', 'https://www.tku.edu.tw/');
   } else if (selected === 'ET') {
     iframe.attribute('src', 'https://www.et.tku.edu.tw/');
-  } else if (selected === '筆記') {
-    iframe.attribute('src', 'https://hackmd.io/@Yiwen115/H1XjmKfj1l');
+  } else if (selected === '測驗卷') {
+    iframe.attribute('src', 'https://yiwen115.github.io/20250310/');
   }
 }
 
